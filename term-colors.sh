@@ -9,8 +9,8 @@ for fg in $(seq 0 $end); do
         set_bg=$(tput setab $bg)
         reset=$(tput sgr0)
         printf "${set_fg}${set_bg}F:%-3s B:%-3s${reset}" $fg $bg
-        ((i++))
         [[ $((i % w)) == $((w - 1)) ]] && echo
+        ((i++))
     done
 done
 
