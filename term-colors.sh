@@ -13,3 +13,5 @@ for fg in $(seq 0 $end); do
         [[ $((i % w)) == $((w - 1)) ]] && echo
     done
 done
+
+exit 0
